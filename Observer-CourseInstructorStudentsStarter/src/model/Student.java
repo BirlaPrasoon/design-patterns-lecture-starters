@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observer;
 
-public abstract class Student implements Teachable, Observer {
+public abstract class Student implements Teachable, observer.Observer {
 
     private String name;
     private int id;
@@ -25,6 +25,12 @@ public abstract class Student implements Teachable, Observer {
     public void printRecord(){
         System.out.println(id + ":" + name);
     }
+
+   @Override
+    public void update(LectureModule lectureModule) {
+
+       System.out.println("Prof has posted lecture modules: "+ lectureModule);
+   }
 
     @Override
     public boolean equals(Object o) {

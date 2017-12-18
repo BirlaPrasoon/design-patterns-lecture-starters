@@ -1,6 +1,8 @@
 package model;
 
 
+import java.util.Observable;
+
 public class OnlineStudent extends Student {
 
 
@@ -11,6 +13,5 @@ public class OnlineStudent extends Student {
     public void learn(){
         System.out.println("I will now go online and learn things!");
     }
-
 
 }
