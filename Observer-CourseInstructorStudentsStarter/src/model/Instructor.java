@@ -13,6 +13,9 @@ public class Instructor {
         String contents = "make up some things and sound convincing";
         LectureModule lectureModule = new LectureModule(moduleName, contents);
         course.addLectureModule(lectureModule);
+        // call the notifyObserver method to inform all of the observers
+        // that an lectureModule has been prepared.
+        course.notifyObservers(lectureModule);
     }
 
     public void assignCourse(Course course) {
