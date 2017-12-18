@@ -25,6 +25,7 @@ public class Course extends Subject{
         if(!students.contains(student)) {
             students.add(student);
             student.addCourse(this);
+            addObserver(student);
         }
     }
 
