@@ -2,8 +2,9 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observer;
 
-public abstract class Student implements Teachable {
+public abstract class Student implements Teachable, Observer {
 
     private String name;
     private int id;
