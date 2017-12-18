@@ -1,10 +1,12 @@
 package model;
 
 
+import observer.Subject;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Course {
+public class Course extends Subject{
     private String courseName;
     private Instructor instructor;
     private List<Student> students = new ArrayList<>();
